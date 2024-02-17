@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Admin LTS Homepage</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AdminLTE CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <title>cookNfresh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <style>
+      nav {
+        background-color: #ffdee9;
+        background-image: linear-gradient(
+          270deg,
+          #ffdee9 0%,
+          #b5fffc 50%,
+          #ffffff 100%
+        );
+      }
+
+      .content-wrapper {
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+
+  <body class="hold-transition sidebar-mini">
+    <div class="parent-header">
+      <nav
+        class="shadow main-header navbar navbar-expand navbar-white navbar-light"
+      >
+        <div class="links text-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+                ><i class="fas fa-bars"></i
+              ></a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                aria-expanded="false"
+                aria-haspopup="true"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#"
+                id="navbarDropdown2"
+                role="button"
+              >
+                Help
+              </a>
+              <div aria-labelledby="navbarDropdown2" class="dropdown-menu">
+                <a class="dropdown-item" href="#">FAQ</a>
+                <a class="dropdown-item" href="#">Support</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Contact</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="search ml-3">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input
+                aria-label="Search"
+                class="form-control form-control-navbar"
+                placeholder="Search"
+                type="search"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="navbar-nav ml-auto d">
+          <a class="nav-link active" href="login/login.html"
+            >My Account <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-link active" href="#">My AI</a>
+          <a class="nav-link active" href="#">Logout</a>
+        </div>
+        </div>
+      </nav>
+    </div>
+
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <div class="brand-icon">
+        <div class="icons">
+          <a class="brand-link" href="#">
+            <img
+              alt="AI Logo"
+              class="brand-image img-circle"
+              src="sideimg.png"
+            />
+            <span class="brand-text ml-2 font-weight-dark">Arorium</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="mt-2">
+          <ul
+            class="nav nav-pills nav-sidebar flex-column"
+            data-accordion="false"
+            data-widget="treeview"
+            role="menu"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="nav-icon fas fa-th"></i>
+                <p>Profile</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="nav-icon fas fa-th"></i>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="nav-icon fas fa-cogs"></i>
+                <p>Settings</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="nav-icon fas fa-cogs"></i>
+                <p>Logout</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <div class="content-wrapper">
+      <!-- Main content -->
+      <section class="content">
+        <!-- Add your page content here -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="text-center m-2 text-bold">Dashboard</h1>
+            </div>
+          </div>
+          <div class="d-flex flex-row flex-wrap">
+            <div class="row">
+              <div class="col">
+                <div
+                  class="mt-1 carousel slide"
+                  data-ride="carousel"
+                  id="carouselExampleIndicators"
+                >
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <img
+                        alt="900x400"
+                        class="d-block w-100"
+                        data-holder-rendered="true"
+                        data-src="holder.js/900x400?theme=social"
+                        src="Carouseli1.jpg"
+                        style="width: 900px; height: 506px"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        alt="900x400"
+                        class="d-block w-100"
+                        data-holder-rendered="true"
+                        data-src="holder.js/900x506?theme=industrial"
+                        src="Carouseli2.jpg"
+                        style="width: 900px; height: 506px"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        alt="900x400"
+                        class="d-block w-100"
+                        data-holder-rendered="true"
+                        data-src="holder.js/900x400?theme=industrial"
+                        src="Carouseli3.jpg"
+                        style="width: 900px; height: 506px"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    data-slide="prev"
+                    href="#carouselExampleIndicators"
+                    role="button"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="carousel-control-prev-icon"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    data-slide="next"
+                    href="#carouselExampleIndicators"
+                    role="button"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="carousel-control-next-icon"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h1>Ranking List</h1>
+
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Ranking</th>
+                      <th scope="col">Tools</th>
+                      <th scope="col">Introduction</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>OpenAI</td>
+                      <td>
+                        OpenAI creates safe AGI for humanity through research
+                        and advanced models.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>DeepL</td>
+                      <td>
+                        DeepL is a highly accurate translator that translates
+                        texts and documents instantly.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Perplexity AI</td>
+                      <td>
+                        An AI search engine utilizing large language models and
+                        search engines.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Notion AI</td>
+                      <td>
+                        Notion is a versatile workspace that integrates wiki,
+                        docs, and project management.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Poe</td>
+                      <td>
+                        AI-powered platform for instant question answering and
+                        interactive conversations.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>JanitorAI</td>
+                      <td>
+                        Create NSFW fictional chatbot characters with different
+                        personalities using Janitor AI.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">8</th>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">9</th>
+                      <td>AI-Novel</td>
+                      <td>
+                        Largest Japanese AI helps write engaging stories in
+                        Japanese.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">10</th>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row pt-4 mb-5 footer">
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-column">
+              <p class="footer-content">
+                This website gives direction for the young aspiring chefs and
+                also who wanted to try new recipes at home. We have various
+                recipes that makes your dish enhance flavours also provide
+                richess to your special made cuisine. This website features
+                various user friendly functions that make them feel at ease.
+              </p>
+            </div>
+          </div>
+          <div class="d-none d-md-inline col-md-1">
+            <hr
+              style="
+                background-color: rgb(171, 179, 175);
+                height: 80%;
+                width: 2px;
+                margin-top: 5px;
+              "
+            />
+          </div>
+
+          <div class="col-12 col-md-5">
+            <div>
+              <h3 class="footer-heading">
+                <center>Designed By..</center>
+              </h3>
+              <div class="d-flex flex-row justify-content-between">
+                <div class="d-flex flex-column">
+                  <h4 class="footer-name">Ganga Sai Ram J</h4>
+                  <div class="d-flex flex-row">
+                    <i class="bi bi-github"></i>
+                    <a href="" class="ml-1 footer-link">GitHub</a>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <i class="bi bi-linkedin"></i>
+                    <a href="" class="ml-1 footer-link">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column">
+                  <h4 class="footer-name">Aprameya S</h4>
+                  <div class="d-flex flex-row">
+                    <i class="bi bi-github"></i>
+                    <a href="" class="ml-1 footer-link">GitHub</a>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <i class="bi bi-linkedin"></i>
+                    <a href="" class="ml-1 footer-link">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AdminLTE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"></script>
+  </body>
+</html>
